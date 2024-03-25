@@ -4,163 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Violencia a periodistas</title>
-
-    <link rel="stylesheet" href="../styles/output.css">
     <link rel="stylesheet" href="../styles/index.css">
 
 
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='41' viewBox='0 0 40 41'%3E%3Cpath d='M11.1628 1.62288C11.1628 1.15523 11.5121 0.760766 11.9776 0.70276L17.559 0.00729722C18.1142 -0.0618843 18.6047 0.369661 18.6047 0.927421V19.2269C18.6047 19.7846 18.1142 20.2162 17.559 20.147L11.9776 19.4515C11.5121 19.3935 11.1628 18.999 11.1628 18.5314V1.62288Z' fill='white'/%3E%3Cpath d='M0 3.94109C0 3.47344 0.349336 3.07898 0.814851 3.02097L6.39625 2.32551C6.95146 2.25633 7.44186 2.68787 7.44186 3.24563V17.8359C7.44186 18.3937 6.95146 18.8252 6.39625 18.756L0.814851 18.0606C0.349336 18.0026 0 17.6081 0 17.1405V3.94109Z' fill='white'/%3E%3Cpath d='M29.0628 1.55598C29.4769 1.65918 29.7674 2.03008 29.7674 2.45558V10.1858C29.7674 10.6535 29.4181 11.0479 28.9526 11.106L23.3712 11.8014C22.816 11.8706 22.3256 11.4391 22.3256 10.8813V1.06465C22.3256 0.461389 22.8943 0.0187425 23.4814 0.165056L29.0628 1.55598Z' fill='white'/%3E%3Cpath d='M40 4.77379C40 4.34829 39.7095 3.97739 39.2954 3.87419L33.714 2.48327C33.1269 2.33695 32.5581 2.7796 32.5581 3.38286V10.4177C32.5581 10.9754 33.0485 11.407 33.6038 11.3378L39.1851 10.6423C39.6507 10.5843 40 10.1898 40 9.72219V4.77379Z' fill='white'/%3E%3Cpath d='M40 14.2499L21.8605 14.7136C22.1229 18.1146 24.968 20.7409 28.39 20.7409H32.5581V24.6873L0 21.6682V41L40 38.2181V14.2499Z' fill='white'/%3E%3C/svg%3E" type="image/svg+xml">
 
 </head>
-<body>
 
+<main>
+    <header>
     
+    </header>
+    
+    <body>
+        
+    </body>    
+</main>
 
-
-<div id="preloader">
-    <div class="cardL">
-        <div class="loader">
-            <p>Frio</p>
-            <div class="words">
-                <span class="word">apuestas</span>
-                <span class="word">juegos</span>
-                <span class="word">ruleta</span>
-                <span class="word">casino</span>
-                <span class="word">diversion</span>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-
-<div class="h-screen w-full bg-white relative flex overflow-hidden ">
-
-    <!--- Modal -->
-
-
-
-    <div class="w-full h-full flex flex-col justify-between">
-        <!-- Header -->
-        <header id="nav" class="h-20 w-full flex items-center relative justify-between px-5 space-x-10 dark:bg-[#1a2c38] ">
-            <div id="mainText" class="invisible px-3 dark:text-white text-6xl ">
-                Frio
-            </div>
-
-            <div class=" flex flex-none ">
-                <img src="/assets/images/full_logo.png" alt="iconOnMainPage">
-            </div>
-
-            <div class="flex flex-shrink-0 items-center space-x-4 text-white">
-
-
-                <div id="prof" class="flex px-3 space-x-3">
-                    <!-- Simula el perfil -->
-                    <button id="buttonSingIn" class="btn" onclick="goToInit()" >
-                        Iniciar Sesion
-                    </button>
-                </div>
-
-                <div id="reg" class="flex px-3 space-x-3">
-                    <!-- Simula el perfil -->
-                    <button id="buttonRegis" class="btn" onclick="goToReg()">
-                        Registrarse
-                    </button>
-                </div>
-            </div>
-        </header>
-
-
-
-
-
-        <main id="mains" class="max-w-full h-full flex relative overflow-y-hidden  ">
-
-            <div class="h-full w-full m-4 flex flex-wrap items-start justify-start rounded-tl grid-flow-col auto-cols-max gap-4 overflow-y-scroll">
-
-
-                <div class="flex items-center justify-center w-full  py-24 sm:py-8 px-4">
-
-                    <div class="w-full relative flex items-center justify-center">
-
-
-
-                        <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
-                            <div class="flex flex-row justify-between items-center">
-                                <div id="gamesTitle" class="px-3 dark:text-white text-4xl py-4">
-                                    <i class="fa-solid fa-fire fa-xs"></i> Juegos originales
-                                </div>
-                                <div class="flex flex-row">
-                                    <button aria-label="slide backward" class="focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer" id="prev">
-                                        <svg class="dark:text-white" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
-                                    </button>
-                                    <button aria-label="slide forward" class="ml-2 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400" id="next">
-                                        <svg class="dark:text-white" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L7 7L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div id="slider" class="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
-                                <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <a id="cardHov3" onclick="goToInit()">
-                                        <img src="/assets/images/cleanImages/rouletteCar.jpg" alt="black chair and white table" class="object-cover object-center w-80" />
-                                    </a>
-                                </div>
-                                <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <a id="cardHov2" onclick="goToInit()">
-                                        <img src="/assets/images/cleanImages/hiloCar.jpg" alt="black chair and white table" class="object-cover object-center w-80" />
-                                    </a>
-                                </div>
-                                <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <a id="cardHov4" onclick="goToInit()">
-                                        <img src="/assets/images/cleanImages/mine.jpg" alt="black chair and white table" class="object-cover object-center w-80" />
-                                    </a>
-                                </div>
-                                <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <a class="cardHov9" onclick="goToInit()">
-                                        <img src="/assets/images/cleanImages/slideCar.jpg" alt="black chair and white table" class="object-cover object-center w-80" />
-                                    </a>
-                                </div>
-
-                                <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <a class="cardHov9" onclick="goToInit()">
-                                        <img src="/assets/images/cleanImages/pokerCar.jpg" alt="black chair and white table" class="object-cover object-center w-80" />
-                                    </a>
-                                </div>
-                                <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <a class="cardHov9" onclick="goToInit()">
-                                        <img src="/assets/images/cleanImages/limboCar.jpg" alt="black chair and white table" class="object-cover object-center w-80" />
-                                    </a>
-                                </div>
-                                <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <a class="cardHov9" onclick="goToInit()">
-                                        <img src="/assets/images/cleanImages/diamondsCart.jpg" alt="black chair and white table" class="object-cover object-center w-80" />
-                                    </a>
-                                </div>
-
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-
-            </div>
-        </main>
-    </div>
-
-</div>
-
-
-
-
-
-</body>
-
-<script src="https://kit.fontawesome.com/549e1abe3e.js" crossorigin="anonymous"></script>
 
 </html>
 
