@@ -283,7 +283,6 @@ main {
     align-items: center;
     justify-content: flex-start;
     text-decoration: none;
-
 }
 
 .inner2:hover{
@@ -298,7 +297,6 @@ main {
     align-items: center;
     justify-content: flex-start;
     text-decoration: none;
-
 }
 
 .frame-2 {
@@ -390,6 +388,16 @@ main {
     line-height: var(--action-nav-link-line-height, 140%);
     font-weight: var(--action-nav-link-font-weight, 400);
     position: relative;
+    text-decoration: none;
+}
+.home:hover {
+    color: #b4aeae;
+    text-align: left;
+    font-family: var(--action-nav-link-font-family, 'Poppins-Regular', sans-serif);
+    font-size: var(--action-nav-link-font-size, 14px);
+    line-height: var(--action-nav-link-line-height, 140%);
+    font-weight: var(--action-nav-link-font-weight, 400);
+    position: relative;
 }
 
 /* ======================================================================= */
@@ -443,7 +451,18 @@ main {
     left: 50%; /* Centrar horizontalmente */
     top: 60%; /* Centrar verticalmente */
     transform: translate(-50%, -50%); /* Ajustar para centrar */
-    backdrop-filter: blur(24.6px);
+    backdrop-filter: blur(25px);
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.buttonM:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.buttonM:active{
+    background: rgba(255, 255, 255, 0.10);
 }
 
 .quieres-saber-mas {
@@ -458,19 +477,19 @@ main {
 
 .violencia-en-m-xico {
     width: 100%;
-    height: 40%;
+    height: 16%;
     position: absolute;
     left: 50%; /* Centrar horizontalmente */
     top: 50%; /* Centrar verticalmente */
-    transform: translate(-50%, -50%); /* Ajustar para centrar */
+    transform: translate(-50%, -115%); /* Ajustar para centrar */
 }
 
 .violencia-en-m-xico2 {
-    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(231, 75, 75, 1.00) 92.39996075630188%);
+    background: linear-gradient(90deg, rgba(231, 75, 75, 1.00) 0%, rgba(255, 110, 110, 1.00) 50.899964570999146%, rgba(255, 255, 255, 1.00) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-align: center; /* Centrar el texto horizontalmente */
+    text-align: center;
     font-family: 'AbhayaLibreExtraBold-Regular', sans-serif;
     font-size: 90px;
     font-weight: 400;
@@ -480,8 +499,10 @@ main {
     width: 100%;
     bottom: 0;
     top: 0;
-    height: 50%;
+    height: auto;
 }
+
+
 
 /* ======================================================================= */
 /* Splatters */
@@ -509,3 +530,4 @@ main {
     overflow: visible;
     right: 50%;
 }
+
