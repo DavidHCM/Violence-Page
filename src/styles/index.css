@@ -1,3 +1,453 @@
-.main{
-    background: #1E1E1E;
+html {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+main {
+    flex-grow: 1;
+}
+
+
+
+/* ======================================================================= */
+
+/* Background colors */
+
+.background,
+.background * {
+    box-sizing: border-box;
+}
+
+.background {
+    background: #1e1e1e;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+}
+
+/* ======================================================================= */
+
+/* Background textures */
+
+.diagonal-lines,
+.diagonal-lines * {
+    box-sizing: border-box;
+}
+
+.diagonal-lines {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.diagonal-lines2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    object-fit: cover;
+}
+
+.rectangle,
+.rectangle * {
+    box-sizing: border-box;
+}
+
+.rectangle {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.rectangle2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    top: 0%;
+    mix-blend-mode: overlay;
+    object-fit: cover;
+}
+
+/* ======================================================================= */
+
+/* Header */
+
+.header,
+.header * {
+    box-sizing: border-box;
+}
+
+.header {
+    height: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.header2 {
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.42);
+    border-width: 0 0 1px 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.button {
+    background: rgba(255, 255, 255, 0.10);
+    border-radius: 8px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.18);
+    border-width: 1px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+
+    align-items: center;
+
+    position: absolute;
+
+    right: 20px;
+    top: 26px;
+
+    backdrop-filter: blur(25px);
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.button:active{
+    background: rgba(255, 255, 255, 0.10);
+}
+
+.cont-ctanos {
+    color: var(--color-white, #ffffff);
+    text-align: left;
+    font-family: var(--text-small-medium-font-family, 'Poppins-Medium', sans-serif);
+    font-size: var(--text-small-medium-font-size, 14px);
+    line-height: var(--text-small-medium-line-height, 140%);
+    font-weight: var(--text-small-medium-font-weight, 500);
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.logo {
+    position: absolute;
+    inset: 0;
+}
+
+.icon {
+    width: 40px;
+    height: 41px;
+    position: absolute;
+    left: 29px;
+    top: 17px;
+    overflow: visible;
+}
+
+.human {
+    color: #ffffff;
+    text-align: left;
+    font-family: 'Poppins-Medium', sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+    position: absolute;
+    left: 76px;
+    top: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.period-stica {
+    color: #ffffff;
+    text-align: left;
+    font-family: 'Poppins-Medium', sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+    position: absolute;
+    left: 116.8px;
+    top: 35.13px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.frame-1 {
+    display: flex;
+    flex-direction: row;
+    gap: 191px;
+    align-items: center;
+    justify-content: center;
+    width: 476px;
+    position: absolute;
+    left: calc(50% - 238px);
+    top: 16px;
+}
+
+.frame-12 {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex: 1;
+    position: relative;
+}
+
+.fonts {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.inner {
+    color: #b4aeae;
+    text-align: left;
+    font-family: 'Inter-Medium', sans-serif;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+
+}
+
+.inner2 {
+    color: #ffffff;
+    text-align: left;
+    font-family: 'Inter-Medium', sans-serif;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+
+}
+
+.inner2:hover{
+    color: #b4aeae;
+    text-align: left;
+    font-family: 'Inter-Medium', sans-serif;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+
+}
+
+.frame-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    position: relative;
+}
+
+/* ======================================================================= */
+
+/* Footer */
+.footer,
+.footer * {
+    box-sizing: border-box;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.footer2 {
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.42);
+    border-width: 0.5px 0px 0px 0px;
+    padding: 12px 335px 12px 335px;
+    display: flex;
+    flex-direction: row;
+    gap: 591px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 1920px;
+    position: relative;
+}
+
+._2024-violencia-periodistica {
+    color: #ffffff;
+    text-align: left;
+    font-family: 'Poppins-Regular', sans-serif;
+    font-size: 14px;
+    line-height: 100%;
+    font-weight: 400;
+    position: relative;
+    transform-origin: 0 0;
+    transform: rotate(0deg) scale(1, 1);
+}
+
+.bottom-footer-navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    position: relative;
+    transform-origin: 0 0;
+    transform: rotate(0deg) scale(1, 1);
+}
+
+.navigation-item {
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.home {
+    color: #ffffff;
+    text-align: left;
+    font-family: var(--action-nav-link-font-family, 'Poppins-Regular', sans-serif);
+    font-size: var(--action-nav-link-font-size, 14px);
+    line-height: var(--action-nav-link-line-height, 140%);
+    font-weight: var(--action-nav-link-font-weight, 400);
+    position: relative;
+}
+
+/* ======================================================================= */
+
+/* Main central */
+.violencia-en-m-xico,
+.violencia-en-m-xico * {
+    box-sizing: border-box;
+}
+
+.violencia-en-m-xico {
+    height: 177px;
+    position: relative;
+}
+
+.violencia-en-m-xico2 {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1.00) 0%, rgba(231, 75, 75, 1.00) 92.39996075630188%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+    font-family: 'AbhayaLibreExtraBold-Regular', sans-serif;
+    font-size: 150px;
+    font-weight: 400;
+    position: absolute;
+    right: 0%;
+    left: 0.16%;
+    width: 99.84%;
+    bottom: 0%;
+    top: 0%;
+    height: 100%;
+}
+
+
+
+.main-picture,
+.main-picture * {
+    box-sizing: border-box;
+}
+.main-picture {
+    height: 829px;
+    position: relative;
+}
+.main-picture2 {
+    border-radius: 100px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    top: 0%;
+    filter: blur(7.5px);
+    object-fit: cover;
+}
+
+
+
+.splatter-12,
+.splatter-12 * {
+    box-sizing: border-box;
+}
+
+.splatter-12 {
+    height: 906px;
+    position: relative;
+    overflow: visible;
+}
+
+
+
+.splatter-20,
+.splatter-20 * {
+    box-sizing: border-box;
+}
+
+.splatter-20 {
+    height: 962px;
+    position: relative;
+    overflow: visible;
 }
