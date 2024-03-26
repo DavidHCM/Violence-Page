@@ -1,8 +1,8 @@
 function detectarDispositivo() {
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        window.location.href = "/Violence-Page/indexCe.html";
+        window.location.href = "indexCe.html";
     } else {
-        window.location.href = "/Violence-Page/indexCo.html";
+        window.location.href = "indexCo.html";
     }
 }
 
