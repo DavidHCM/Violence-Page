@@ -9,9 +9,9 @@ html, body {
 
     display: grid;
     grid:
-    "header" 10%
+    "header" 20%
     "main" auto
-    "footer" 10%
+    "footer" 20%
     / 1fr;
     gap: 8px;
 }
@@ -173,56 +173,3 @@ html, body {
 
 /* ================================================================================ */
 /* Footer */
-.header,
-.header * {
-    box-sizing: border-box;
-}
-
-.header {
-    border-style: solid;
-    border-color: rgba(255, 255, 255, 0.42);
-    border-width: 1px 0px 0px 0px;
-    height: 80px;
-    position: relative;
-    overflow: hidden;
-}
-
-._2024-violencia-period-stica {
-    color: #ffffff;
-    text-align: left;
-    font-family: 'Poppins-Regular', sans-serif;
-    font-size: 14px;
-    line-height: 100%;
-    font-weight: 400;
-    position: absolute;
-    left: 37px;
-    top: 17px;
-    width: 93px;
-    transform-origin: 0 0;
-    transform: rotate(0deg) scale(1, 1);
-}
-
-.navigation-item {
-    padding: 8px;
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    left: 195px;
-    top: 17px;
-    transform-origin: 0 0;
-    transform: rotate(0deg) scale(1, 1);
-    overflow: hidden;
-}
-
-.home {
-    color: #ffffff;
-    text-align: left;
-    font-family: var(--action-nav-link-font-family, 'Poppins-Regular', sans-serif);
-    font-size: var(--action-nav-link-font-size, 14px);
-    line-height: var(--action-nav-link-line-height, 140%);
-    font-weight: var(--action-nav-link-font-weight, 400);
-    position: relative;
-}
