@@ -7,13 +7,11 @@ html, body {
 .layout {
     width: 100vw; /* Ancho total de la ventana del navegador */
     height: 100vh; /* Alto total de la ventana del navegador */
-
     display: grid;
     grid:
     "header" 10%
     "main" auto
-    "footer" 10%
-    / 1fr;
+    "footer" 10%;
     gap: 8px;
 }
 
