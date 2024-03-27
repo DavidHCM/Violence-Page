@@ -264,21 +264,32 @@ html, body {
     flex-shrink: 0;
     left: 2%;
     position: fixed;
-    z-index: 9999;
+    z-index: 9998;
     pointer-events: none;
     transform: scale(0.9);
 }
 
-.home {
+.menu-abierto > * {
+
+    pointer-events: auto;
+}
+
+.homes {
     display: flex;
     flex-direction: column;
-    gap: 0px;
+    gap: 0;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
     width: 54px;
     height: 54px;
     position: relative;
+    border: none; /* Remove border */
+    border-radius: 10px;
+}
+
+.homes:active{
+    background-color: rgba(216, 214, 214, 0.27);
 }
 
 .home2 {
@@ -301,6 +312,8 @@ html, body {
     font-size: 10px;
     font-weight: 400;
     position: relative;
+    border: none; /* Remove border */
+    border-radius: 10px;
 }
 
 .about-us {
@@ -313,6 +326,12 @@ html, body {
     width: 54px;
     height: 54px;
     position: relative;
+    border: none; /* Remove border */
+    border-radius: 10px;
+}
+
+.about-us:active{
+    background-color: rgba(216, 214, 214, 0.27);
 }
 
 .submenu {
@@ -335,6 +354,8 @@ html, body {
     font-size: 10px;
     font-weight: 400;
     position: relative;
+    border: none; /* Remove border */
+    border-radius: 10px;
 }
 
 .informacion {
@@ -347,6 +368,13 @@ html, body {
     width: 54px;
     height: 54px;
     position: relative;
+    border: none; /* Remove border */
+    border-radius: 10px;
+}
+
+
+.informacion:active{
+    background-color: rgba(216, 214, 214, 0.27);
 }
 
 .settings {
@@ -360,6 +388,8 @@ html, body {
     height: 32px;
     position: relative;
     overflow: visible;
+    border: none; /* Remove border */
+    border-radius: 10px;
 }
 
 .informacion2 {
@@ -369,6 +399,7 @@ html, body {
     font-size: 10px;
     font-weight: 400;
     position: relative;
+
 }
 
 .violencia {
@@ -381,6 +412,12 @@ html, body {
     width: 54px;
     height: 54px;
     position: relative;
+    border: none; /* Remove border */
+    border-radius: 10px;
+}
+
+.violencia:active{
+    background-color: rgba(216, 214, 214, 0.27);
 }
 
 .profile {
@@ -394,6 +431,8 @@ html, body {
     height: 32px;
     position: relative;
     overflow: visible;
+    border: none; /* Remove border */
+
 }
 
 .violencia2 {
@@ -417,6 +456,11 @@ html, body {
     width: 54px;
     height: 54px;
     position: relative;
+    border: none; /* Remove border */
+}
+
+.close:active{
+    background-color: rgba(216, 214, 214, 0.27);
 }
 
 .cross {
@@ -430,6 +474,7 @@ html, body {
     height: 32px;
     position: relative;
     overflow: visible;
+
 }
 
 .menu-abierto.mostrar {
