@@ -232,7 +232,7 @@ html, body {
 
 /* ================================================================================ */
 /* Splatter */
-
+/*
 .main-phone-splatter,
 .main-phone-splatter * {
     box-sizing: border-box;
@@ -244,7 +244,7 @@ html, body {
     position: relative;
     overflow: visible;
 }
-
+*/
 /* ================================================================================ */
 /* Menu */
 .menu-abierto,
@@ -484,7 +484,7 @@ html, body {
 
 /* ================================================================================ */
 /* texto */
-/*
+
 .text-box,
 .text-box * {
     box-sizing: border-box;
@@ -523,4 +523,3 @@ html, body {
     overflow: visible;
     backdrop-filter: blur(30px);
 }
- */
