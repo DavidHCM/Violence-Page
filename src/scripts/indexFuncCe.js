@@ -23,3 +23,12 @@ function adjustHeightToViewport() {
     });
 }
 */
+
+document.addEventListener('DOMContentLoaded', function() {
+    const botonMenu = document.querySelector('.menu'); // Selecciona el botón del menú
+    const menu = document.querySelector('.menu-abierto'); // Selecciona el menú
+
+    botonMenu.addEventListener('click', function() {
+        menu.classList.toggle('mostrar'); // Alterna la clase para mostrar u ocultar el menú
+    });
+});

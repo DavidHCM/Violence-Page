@@ -123,7 +123,6 @@ html, body {
 }
 
 .menu {
-    background: #ffffff;
     border-radius: 100px;
     padding: 1px;
     display: flex;
@@ -136,6 +135,8 @@ html, body {
 
     position: relative;
     margin: 0 10px;
+    border: none; /* Remove border */
+    background-color: transparent; /* Set background color to transparent */
 }
 
 .burger {
@@ -149,8 +150,9 @@ html, body {
     position: relative;
 }
 
+
+
 .contacto {
-    background: #ffffff;
     border-radius: 100px;
     padding: 1px;
     display: flex;
@@ -162,6 +164,12 @@ html, body {
     height: 70%;
     position: relative;
     margin: 0 10px;
+    border: none; /* Remove border */
+    background-color: transparent; /* Set background color to transparent */
+}
+
+.burger:active{
+    background-color: red;
 }
 
 .burger2 {
@@ -169,11 +177,11 @@ html, body {
     flex-shrink: 0;
     width: 100%;
     height: 100%;
-    left: 0px;
-    top: 0px;
-    overflow: visible;
     position: relative;
+    overflow: visible;
 }
+
+
 
 /* ================================================================================ */
 /* Footer */
@@ -235,4 +243,195 @@ html, body {
     width: 100%;
     position: relative;
     overflow: visible;
+}
+
+/* ================================================================================ */
+/* Menu */
+.menu-abierto,
+.menu-abierto * {
+    box-sizing: border-box;
+}
+
+.menu-abierto {
+    display: none;
+    background: #ffffff;
+    border-radius: 100px;
+    padding: 12px;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    left: 2%;
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+    transform: scale(0.9);
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 54px;
+    height: 54px;
+    position: relative;
+}
+
+.home2 {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    overflow: visible;
+}
+
+.inicio {
+    color: #000000;
+    text-align: right;
+    font-family: 'ABeeZee-Regular', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    position: relative;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 54px;
+    height: 54px;
+    position: relative;
+}
+
+.submenu {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    overflow: visible;
+}
+
+.sobre-nosotros {
+    color: #000000;
+    text-align: center;
+    font-family: 'ABeeZee-Regular', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    position: relative;
+}
+
+.informacion {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 54px;
+    height: 54px;
+    position: relative;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    overflow: visible;
+}
+
+.informacion2 {
+    color: #000000;
+    text-align: right;
+    font-family: 'ABeeZee-Regular', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    position: relative;
+}
+
+.violencia {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 54px;
+    height: 54px;
+    position: relative;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    overflow: visible;
+}
+
+.violencia2 {
+    color: #000000;
+    text-align: right;
+    font-family: 'ABeeZee-Regular', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    position: relative;
+}
+
+.close {
+    background: rgba(112, 112, 112, 0.27);
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 54px;
+    height: 54px;
+    position: relative;
+}
+
+.cross {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    overflow: visible;
+}
+
+.menu-abierto.mostrar {
+    display: flex;
 }

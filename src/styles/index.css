@@ -95,7 +95,7 @@ main {
     "leftSide body rightSide" auto
     "footer footer footer" 110px
     / 10% auto 10%;
-   
+
 }
 
 .header { grid-area: header; }
