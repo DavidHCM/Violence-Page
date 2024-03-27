@@ -1,0 +1,228 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.layout {
+    width: 100vw; /* Ancho total de la ventana del navegador */
+    height: 100vh; /* Alto total de la ventana del navegador */
+
+    display: grid;
+    grid:
+    "header" 10%
+    "main" auto
+    "footer" 10%
+    / 1fr;
+    gap: 8px;
+}
+
+.header { grid-area: header; }
+.main { grid-area: main; }
+.footer { grid-area: footer; }
+
+
+
+.background-iphone,
+.background-iphone * {
+    box-sizing: border-box;
+}
+
+.background-iphone {
+    background: #1e1e1e;
+    height: 100vh; /* Cambiado a 100% del alto de la ventana */
+    position: relative;
+    overflow: hidden;
+}
+
+.diagonal-lines-iphone,
+.diagonal-lines-iphone * {
+    box-sizing: border-box;
+}
+
+.diagonal-lines-iphone {
+    height: 100vh; /* Cambiado a 100% del alto de la ventana */
+    position: relative;
+}
+
+.diagonal-lines {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    top: 0%;
+    object-fit: cover;
+}
+
+.rectangle-iphone,
+.rectangle-iphone * {
+    box-sizing: border-box;
+}
+
+.rectangle-iphone {
+    height: 100vh; /* Cambiado a 100% del alto de la ventana */
+    position: relative;
+}
+
+.rectangle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    top: 0%;
+    mix-blend-mode: overlay;
+    object-fit: cover;
+}
+
+
+/* ================================================================================ */
+/* Header */
+.header-iphone,
+.header-iphone * {
+    box-sizing: border-box;
+}
+
+.header-iphone {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+/* Centrar elementos dentro de .headers */
+.headers {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.42);
+    border-width: 0px 0px 1px 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    top: 0%;
+    overflow: hidden;
+}
+
+
+.logo {
+    width: 50%;
+    height: 50%;
+    overflow: visible;
+    position: relative;
+    margin: 0 10px;
+}
+
+.menu {
+    background: #ffffff;
+    border-radius: 100px;
+    padding: 1px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 15%;
+    height: 70%;
+
+    position: relative;
+    margin: 0 10px;
+}
+
+.burger {
+    border-radius: 100px;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+    position: relative;
+}
+
+.contacto {
+    background: #ffffff;
+    border-radius: 100px;
+    padding: 1px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 15%;
+    height: 70%;
+    position: relative;
+    margin: 0 10px;
+}
+
+.burger2 {
+    border-radius: 100px;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+    position: relative;
+}
+
+/* ================================================================================ */
+/* Footer */
+.header,
+.header * {
+    box-sizing: border-box;
+}
+
+.header {
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.42);
+    border-width: 1px 0px 0px 0px;
+    height: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+._2024-violencia-period-stica {
+    color: #ffffff;
+    text-align: left;
+    font-family: 'Poppins-Regular', sans-serif;
+    font-size: 14px;
+    line-height: 100%;
+    font-weight: 400;
+    position: absolute;
+    left: 37px;
+    top: 17px;
+    width: 93px;
+    transform-origin: 0 0;
+    transform: rotate(0deg) scale(1, 1);
+}
+
+.navigation-item {
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 195px;
+    top: 17px;
+    transform-origin: 0 0;
+    transform: rotate(0deg) scale(1, 1);
+    overflow: hidden;
+}
+
+.home {
+    color: #ffffff;
+    text-align: left;
+    font-family: var(--action-nav-link-font-family, 'Poppins-Regular', sans-serif);
+    font-size: var(--action-nav-link-font-size, 14px);
+    line-height: var(--action-nav-link-line-height, 140%);
+    font-weight: var(--action-nav-link-font-weight, 400);
+    position: relative;
+}
