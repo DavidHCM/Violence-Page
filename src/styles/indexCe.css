@@ -8,11 +8,11 @@ html, body {
 
 .layout {
     width: 100%; /* Changed from 100vw to 100% */
-    min-height: 80%; /* Changed from 100vh to 100%, allows content to expand */
+    min-height: 100%; /* Changed from 100vh to 100%, allows content to expand */
     display: grid;
     grid:
     "header" 10%
-    "main" 80%
+    "main" auto
     "footer" 10%;
     gap: 8px;
 }
@@ -22,7 +22,7 @@ html, body {
 .footer { grid-area: footer; }
 
 .background-iphone, .rectangle-iphone, .diagonal-lines-iphone {
-    height: auto; /* Change fixed heights to auto for flexibility */
+    height: 100%; /* Change fixed heights to auto for flexibility */
     overflow-y: auto; /* Allow scrolling within sections if needed */
 }
 
@@ -33,7 +33,7 @@ html, body {
 
 .background-iphone {
     background: #1e1e1e;
-    height: 100vh; /* Cambiado a 100% del alto de la ventana */
+    height: 100%; /* Cambiado a 100% del alto de la ventana */
     position: relative;
     overflow: hidden;
 }
@@ -44,13 +44,13 @@ html, body {
 }
 
 .diagonal-lines-iphone {
-    height: 100vh; /* Cambiado a 100% del alto de la ventana */
+    height: 100%; /* Cambiado a 100% del alto de la ventana */
     position: relative;
 }
 
 .diagonal-lines {
     width: auto;
-    height: 100vh;
+    height: 100%;
     position: absolute;
     right: 0;
     left: 0;
@@ -65,13 +65,13 @@ html, body {
 }
 
 .rectangle-iphone {
-    height: 100vh; /* Cambiado a 100% del alto de la ventana */
+    height: 100%; /* Cambiado a 100% del alto de la ventana */
     position: relative;
 }
 
 .rectangle {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     position: absolute;
     right: 0;
     left: 0;
@@ -199,7 +199,7 @@ html, body {
     color: #ffffff;
     text-align: center;
     font-family: 'Poppins-Regular', sans-serif;
-    font-size: 150%;
+    font-size: 90%;
     line-height: 100%;
     font-weight: 400;
     margin-right: 20%; /* Añadido para separación entre elementos */
@@ -216,7 +216,7 @@ html, body {
     color: #ffffff;
     text-align: center;
     font-family: var(--action-nav-link-font-family, 'Poppins-Regular', sans-serif);
-    font-size: var(--action-nav-link-font-size, 150%);
+    font-size: var(--action-nav-link-font-size, 90%);
     line-height: var(--action-nav-link-line-height, 140%);
     font-weight: var(--action-nav-link-font-weight, 400);
     position: relative;
