@@ -9,9 +9,9 @@ html, body {
 
     display: grid;
     grid:
-    "header" 20%
+    "header" 10%
     "main" auto
-    "footer" 20%
+    "footer" 10%
     / 1fr;
     gap: 8px;
 }
