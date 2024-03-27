@@ -269,6 +269,7 @@ html, body {
     transform: scale(0.9);
 }
 
+
 .menu-abierto > * {
 
     pointer-events: auto;
@@ -479,4 +480,46 @@ html, body {
 
 .menu-abierto.mostrar {
     display: flex;
+}
+
+/* ================================================================================ */
+/* texto */
+
+.text-box,
+.text-box * {
+    box-sizing: border-box;
+}
+
+.text-box {
+    height: 80%;
+    width: 80%;
+    position: fixed;
+    z-index: 9997;
+}
+
+.text-box2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    left: 23%;
+    bottom: 0;
+    top: 5%;
+}
+
+.text-box3 {
+    background: rgba(255, 255, 255, 0.10);
+    border-radius: 40px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.40);
+    border-width: 1px;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    top: 0%;
+    overflow: visible;
+    backdrop-filter: blur(30px);
 }
