@@ -2,12 +2,13 @@ html, body {
     margin: 0;
     padding: 0;
     background: #1e1e1e;
-    height: 100vh;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 .layout {
-    width: 100vw; /* Ancho total de la ventana del navegador */
-    height: 100vh; /* Alto total de la ventana del navegador */
+    width: 100%; /* Changed from 100vw to 100% */
+    min-height: 100%; /* Changed from 100vh to 100%, allows content to expand */
     display: grid;
     grid:
     "header" 10%
@@ -20,7 +21,10 @@ html, body {
 .main { grid-area: main; }
 .footer { grid-area: footer; }
 
-
+.background-iphone, .rectangle-iphone, .diagonal-lines-iphone {
+    height: auto; /* Change fixed heights to auto for flexibility */
+    overflow-y: auto; /* Allow scrolling within sections if needed */
+}
 
 .background-iphone,
 .background-iphone * {
@@ -229,7 +233,6 @@ html, body {
 .main-phone-splatter {
     height: 100%;
     width: 100%;
-
     position: relative;
     overflow: visible;
 }
