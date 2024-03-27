@@ -2,13 +2,11 @@ html, body {
     margin: 0;
     padding: 0;
     background: #1e1e1e;
-    min-height: 100%;
-
 }
 
 .layout {
     width: 100vw; /* Ancho total de la ventana del navegador */
-    height: 60vh; /* Alto total de la ventana del navegador */
+    height: 60%; /* Alto total de la ventana del navegador */
     display: grid;
     grid:
     "header" 10%
