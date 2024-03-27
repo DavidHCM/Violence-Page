@@ -5,8 +5,8 @@ html, body {
 }
 
 .layout {
-    width: auto; /* Ancho total de la ventana del navegador */
-    height: auto; /* Alto total de la ventana del navegador */
+    width: 100vw; /* Ancho total de la ventana del navegador */
+    height: 100vh; /* Alto total de la ventana del navegador */
     display: grid;
     grid:
     "header" 10%
@@ -44,8 +44,8 @@ html, body {
 }
 
 .diagonal-lines {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: 100vh;
     position: absolute;
     right: 0%;
     left: 0%;
@@ -65,8 +65,8 @@ html, body {
 }
 
 .rectangle {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     position: absolute;
     right: 0%;
     left: 0%;
