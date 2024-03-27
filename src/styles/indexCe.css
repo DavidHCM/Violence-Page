@@ -493,8 +493,7 @@ html, body {
 .text-box {
     height: 80%;
     width: 80%;
-    position: fixed;
-    z-index: 9997;
+    position: absolute;
 }
 
 .text-box2 {
