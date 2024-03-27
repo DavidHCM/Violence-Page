@@ -1,4 +1,5 @@
 
+/*
 document.addEventListener("DOMContentLoaded", function() {
     adjustHeightToViewport();
 
@@ -22,3 +23,4 @@ function adjustHeightToViewport() {
         });
     });
 }
+ */
