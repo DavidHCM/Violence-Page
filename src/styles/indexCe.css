@@ -14,7 +14,7 @@ html, body {
     "header" 10%
     "main" auto
     "footer" 10%;
-    gap: 8px;
+
 }
 
 .header { grid-area: header; }
