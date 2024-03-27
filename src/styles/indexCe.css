@@ -8,11 +8,11 @@ html, body {
 
 .layout {
     width: 100%; /* Changed from 100vw to 100% */
-    min-height: 100%; /* Changed from 100vh to 100%, allows content to expand */
+    min-height: 80%; /* Changed from 100vh to 100%, allows content to expand */
     display: grid;
     grid:
     "header" 10%
-    "main" auto
+    "main" 80%
     "footer" 10%;
     gap: 8px;
 }
@@ -52,10 +52,10 @@ html, body {
     width: auto;
     height: 100vh;
     position: absolute;
-    right: 0%;
-    left: 0%;
-    bottom: 0%;
-    top: 0%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
     object-fit: cover;
 }
 
@@ -73,10 +73,10 @@ html, body {
     width: 100vw;
     height: 100vh;
     position: absolute;
-    right: 0%;
-    left: 0%;
-    bottom: 0%;
-    top: 0%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
     mix-blend-mode: overlay;
     object-fit: cover;
 }
