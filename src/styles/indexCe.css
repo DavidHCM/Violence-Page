@@ -5,8 +5,8 @@ html, body {
 }
 
 .layout {
-    width: 100vw; /* Ancho total de la ventana del navegador */
-    height: 100vh; /* Alto total de la ventana del navegador */
+    width: 360px;
+    height: 800px;
     display: grid;
     grid:
     "header" 10%
