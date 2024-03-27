@@ -5,8 +5,8 @@ html, body {
 }
 
 .layout {
-    width: 360px;
-    height: 800px;
+    width: 100vw; /* Ancho total de la ventana del navegador */
+    height: 100vh; /* Alto total de la ventana del navegador */
     display: grid;
     grid:
     "header" 10%
@@ -172,7 +172,6 @@ html, body {
 
 /* ================================================================================ */
 /* Footer */
-/* Footer */
 .footer,
 .footer * {
     box-sizing: border-box;
@@ -216,4 +215,20 @@ html, body {
     line-height: var(--action-nav-link-line-height, 140%);
     font-weight: var(--action-nav-link-font-weight, 400);
     position: relative;
+}
+
+/* ================================================================================ */
+/* Splatter */
+
+.main-phone-splatter,
+.main-phone-splatter * {
+    box-sizing: border-box;
+}
+
+.main-phone-splatter {
+    height: 100%;
+    width: 100%;
+
+    position: relative;
+    overflow: visible;
 }
