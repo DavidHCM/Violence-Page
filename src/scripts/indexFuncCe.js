@@ -8,3 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 });
+
+function dat ()
+{
+    console.log("Asd")
+}

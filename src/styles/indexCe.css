@@ -169,7 +169,7 @@ html, body {
 }
 
 .burger:active{
-    background-color: red;
+    background-color: rgba(255, 255, 255, 0.45);
 }
 
 .burger2 {
@@ -228,6 +228,7 @@ html, body {
     line-height: var(--action-nav-link-line-height, 140%);
     font-weight: var(--action-nav-link-font-weight, 400);
     position: relative;
+    text-decoration: none;
 }
 
 /* ================================================================================ */
@@ -254,7 +255,7 @@ html, body {
 
 .menu-abierto {
     display: none;
-    background: #ffffff;
+    background: linear-gradient(177.72deg, rgba(255, 255, 255, 1.00) 0%, rgba(202, 129, 129, 1.00) 100%);
     border-radius: 100px;
     padding: 12px;
     flex-direction: column;
@@ -285,8 +286,9 @@ html, body {
     width: 54px;
     height: 54px;
     position: relative;
-    border: none; /* Remove border */
+    border: none;
     border-radius: 10px;
+    background-color: transparent;
 }
 
 .homes:active{
@@ -307,13 +309,13 @@ html, body {
 }
 
 .inicio {
-    color: #000000;
+    color: #333333;
     text-align: right;
     font-family: 'ABeeZee-Regular', sans-serif;
     font-size: 10px;
     font-weight: 400;
     position: relative;
-    border: none; /* Remove border */
+    border: none;
     border-radius: 10px;
 }
 
@@ -327,8 +329,9 @@ html, body {
     width: 54px;
     height: 54px;
     position: relative;
-    border: none; /* Remove border */
+    border: none;
     border-radius: 10px;
+    background-color: transparent;
 }
 
 .about-us:active{
@@ -349,13 +352,13 @@ html, body {
 }
 
 .sobre-nosotros {
-    color: #000000;
+    color: #333333;
     text-align: center;
     font-family: 'ABeeZee-Regular', sans-serif;
     font-size: 10px;
     font-weight: 400;
     position: relative;
-    border: none; /* Remove border */
+    border: none;
     border-radius: 10px;
 }
 
@@ -369,8 +372,9 @@ html, body {
     width: 54px;
     height: 54px;
     position: relative;
-    border: none; /* Remove border */
+    border: none;
     border-radius: 10px;
+    background-color: transparent;
 }
 
 
@@ -394,7 +398,7 @@ html, body {
 }
 
 .informacion2 {
-    color: #000000;
+    color: #333333;
     text-align: right;
     font-family: 'ABeeZee-Regular', sans-serif;
     font-size: 10px;
@@ -413,8 +417,9 @@ html, body {
     width: 54px;
     height: 54px;
     position: relative;
-    border: none; /* Remove border */
+    border: none;
     border-radius: 10px;
+    background-color: transparent;
 }
 
 .violencia:active{
@@ -437,7 +442,7 @@ html, body {
 }
 
 .violencia2 {
-    color: #000000;
+    color: #333333;
     text-align: right;
     font-family: 'ABeeZee-Regular', sans-serif;
     font-size: 10px;
@@ -446,7 +451,7 @@ html, body {
 }
 
 .close {
-    background: rgba(112, 112, 112, 0.27);
+    background: rgba(255, 255, 255, 0.67);
     border-radius: 100px;
     display: flex;
     flex-direction: row;
@@ -524,13 +529,11 @@ html, body {
 }
 
 
-
-
 .layoutContainer {
     display: grid;
     grid-template-rows: auto;
     grid-auto-flow: row;
-    gap: 8px; 
+    gap: 8px;
     padding: 20px;
 }
 
@@ -541,7 +544,7 @@ html, body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
-    font-family: 'AbhayaLibreExtraBold-Regular', sans-serif;
+    font-family: 'AbhayaLibreExtraBold-Regular', serif;
     font-size: 38px;
     font-weight: 400;
     width: auto;
@@ -560,6 +563,7 @@ html, body {
     font-weight: 400;
     width: auto;
     height: auto;
+    text-decoration: none;
 }
 
 .quieres-saber-m-sX {
