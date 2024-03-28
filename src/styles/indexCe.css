@@ -21,7 +21,7 @@ html, body {
 .main { grid-area: main; }
 .footer { grid-area: footer; }
 
-.background-iphone, .rectangle-iphone, .diagonal-lines-iphone {
+.background-iphone, .rectangle-iphone, .diagonal-lines-iphone, .main-phone-splatter {
     height: 100%; /* Change fixed heights to auto for flexibility */
     overflow-y: auto; /* Allow scrolling within sections if needed */
 }
@@ -39,16 +39,16 @@ html, body {
 }
 
 .diagonal-lines-iphone,
-.diagonal-lines-iphone * {
+.diagonal-lines-iphone,.main-phone-splatter * {
     box-sizing: border-box;
 }
 
-.diagonal-lines-iphone {
+.diagonal-lines-iphone,.main-phone-splatter {
     height: 100%; /* Cambiado a 100% del alto de la ventana */
     position: relative;
 }
 
-.diagonal-lines {
+.diagonal-lines,.main-phone-splatter {
     width: auto;
     height: 100%;
     position: absolute;
@@ -491,60 +491,47 @@ html, body {
 }
 
 .text-box {
-
-    height: 80%;
-    width: 80%;
-    position: absolute;
+    box-sizing: border-box;
+    position: relative; /* Cambiado de absolute para permitir fluidez en el diseño */
+    width: 80%; /* Mantenido, pero asegúrate de que este tamaño sea adecuado para tu diseño */
+    height: auto; /* Cambiado de un porcentaje fijo a auto para permitir expansión */
+    margin: auto; /* Centrar en el contenedor padre, si es deseado */
 }
 
 .text-box2 {
+    box-sizing: border-box;
+    position: relative; /* Cambiado de absolute para un flujo natural del documento */
     width: 100%;
-    height: 100%;
-    position: absolute;
-    right: 0;
-    left: 23%;
-    bottom: 0;
-    top: 5%;
+    height: auto; /* Permite que se ajuste según el contenido */
+    padding: 20px; /* Espacio alrededor del contenido, ajustable según necesidad */
 }
 
+
 .text-box3 {
+    box-sizing: border-box;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(239, 120, 120, 0.1) 100%);
     border-radius: 40px;
     border-style: solid;
     border-color: rgba(255, 255, 255, 0.40);
     border-width: 1px;
-    width: 80%;
-    height: 80%;
-    position: absolute;
-    right: 0%;
-    left: 0%;
-    bottom: 0%;
-    top: 0%;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
     overflow: visible;
     backdrop-filter: blur(30px);
 }
 
-/*
-.violencia-en-m-xico {
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1.00) 0%, rgba(231, 75, 75, 1.00) 92.39996075630188%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-    font-family: 'AbhayaLibreExtraBold-Regular', serif;
-    font-size: 43px;
-    font-weight: 400;
-    position: relative;
-    width: auto;
-}
-*/
+
 
 
 .layoutContainer {
     display: grid;
-    grid-template-rows: repeat(4, auto);
-    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-auto-flow: row;
     gap: 8px;
+    padding: 20px;
 }
 
 
@@ -596,81 +583,3 @@ html, body {
 
 }
 
-
-/*
-.group-1X,
-.group-1X * {
-    box-sizing: border-box;
-}
-
-.group-1X {
-    position: relative;
-    text-align: center;
-    min-height: 600px;
-}
-
-
-.violencia-en-m-xicoX {
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1.00) 0%, rgba(231, 75, 75, 1.00) 92.39996075630188%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-    font-family: 'AbhayaLibreExtraBold-Regular', sans-serif;
-    font-size: 38px;
-    font-weight: 400;
-    position: absolute;
-    left: 25%;
-    right: 25%;
-    width: auto;
-    display: inline-block;
-    top: 20px;
-}
-
-.presiona-aquX {
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1.00) 0%, rgba(231, 75, 75, 1.00) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-    font-family: 'AbhayaLibreExtraBold-Regular', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    position: absolute;
-    left: 25%;
-    right: 25%;
-    top: 483px;
-    width: auto;
-    display: inline-block;
-}
-
-.quieres-saber-m-sX {
-    color: #ffffff;
-    text-align: center;
-    font-family: 'AbhayaLibreExtraBold-Regular', sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    position: absolute;
-    left: 25%;
-    right: 25%;
-    top: 448px;
-    width: auto;
-    display: inline-block;
-}
-
-.ens {
-    color: #ffffff;
-    text-align: center;
-    font-family: 'AbhayaLibreExtraBold-Regular', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    position: absolute;
-    left: 21px;
-    right: 21px;
-    top: 133px;
-    width: auto;
-    height: auto;
-    display: inline-block;
-}
-
- */
