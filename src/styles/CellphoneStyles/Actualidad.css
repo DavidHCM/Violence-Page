@@ -9,6 +9,7 @@ html, body {
 .layout {
     width: 100%; /* Changed from 100vw to 100% */
     min-height: 100%; /* Changed from 100vh to 100%, allows content to expand */
+    height: 100px;
     display: grid;
     grid:
     "header" 10%
@@ -80,7 +81,6 @@ html, body {
     mix-blend-mode: overlay;
     object-fit: cover;
 }
-
 
 /* ================================================================================ */
 /* Header */
@@ -180,7 +180,6 @@ html, body {
     position: relative;
     overflow: visible;
 }
-
 
 
 /* ================================================================================ */
