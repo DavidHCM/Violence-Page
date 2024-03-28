@@ -1,0 +1,593 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #1e1e1e;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.layout {
+    width: 100%; /* Changed from 100vw to 100% */
+    min-height: 100%; /* Changed from 100vh to 100%, allows content to expand */
+    display: grid;
+    grid:
+    "header" 10%
+    "main" auto
+    "footer" 10%;
+
+}
+
+.header { grid-area: header; }
+.main { grid-area: main; }
+.footer { grid-area: footer; }
+
+.background-iphone, .rectangle-iphone, .diagonal-lines-iphone {
+    height: 100%; /* Change fixed heights to auto for flexibility */
+    overflow-y: auto; /* Allow scrolling within sections if needed */
+}
+
+.background-iphone,
+.background-iphone * {
+    box-sizing: border-box;
+}
+
+.background-iphone {
+    background: #1e1e1e;
+    height: 100%; /* Cambiado a 100% del alto de la ventana */
+    position: relative;
+    overflow: hidden;
+}
+
+.diagonal-lines-iphone,
+.diagonal-lines-iphone * {
+    box-sizing: border-box;
+}
+
+.diagonal-lines-iphone {
+    height: 100%; /* Cambiado a 100% del alto de la ventana */
+    position: relative;
+}
+
+.diagonal-lines {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    object-fit: cover;
+}
+
+.rectangle-iphone,
+.rectangle-iphone * {
+    box-sizing: border-box;
+}
+
+.rectangle-iphone {
+    height: 100%; /* Cambiado a 100% del alto de la ventana */
+    position: relative;
+}
+
+.rectangle {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    mix-blend-mode: overlay;
+    object-fit: cover;
+}
+
+
+/* ================================================================================ */
+/* Header */
+.header-iphone,
+.header-iphone * {
+    box-sizing: border-box;
+}
+
+.header-iphone {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+/* Centrar elementos dentro de .headers */
+.headers {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.42);
+    border-width: 0px 0px 1px 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    top: 0%;
+    overflow: hidden;
+}
+
+
+.logo {
+    width: 50%;
+    height: 50%;
+    overflow: visible;
+    position: relative;
+    margin: 0 10px;
+}
+
+.menu {
+    border-radius: 100px;
+    padding: 1px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 15%;
+    height: 70%;
+
+    position: relative;
+    margin: 0 10px;
+    border: none; /* Remove border */
+    background-color: transparent; /* Set background color to transparent */
+}
+
+.burger {
+    border-radius: 100px;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+    position: relative;
+}
+
+
+
+.contacto {
+    border-radius: 100px;
+    padding: 1px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 15%;
+    height: 70%;
+    position: relative;
+    margin: 0 10px;
+    border: none; /* Remove border */
+    background-color: transparent; /* Set background color to transparent */
+}
+
+.burger:active{
+    background-color: rgba(255, 255, 255, 0.45);
+}
+
+.burger2 {
+    border-radius: 100px;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: visible;
+}
+
+
+
+/* ================================================================================ */
+/* Footer */
+.footer,
+.footer * {
+    box-sizing: border-box;
+}
+
+.footers {
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.42);
+    border-width: 1px 0px 0px 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+._2024-violencia-period-stica {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Poppins-Regular', sans-serif;
+    font-size: 90%;
+    line-height: 100%;
+    font-weight: 400;
+    margin-right: 20%; /* Añadido para separación entre elementos */
+}
+
+.navigation-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.home {
+    color: #ffffff;
+    text-align: center;
+    font-family: var(--action-nav-link-font-family, 'Poppins-Regular', sans-serif);
+    font-size: var(--action-nav-link-font-size, 90%);
+    line-height: var(--action-nav-link-line-height, 140%);
+    font-weight: var(--action-nav-link-font-weight, 400);
+    position: relative;
+    text-decoration: none;
+}
+
+/* ================================================================================ */
+/* Splatter */
+/*
+.main-phone-splatter,
+.main-phone-splatter * {
+    box-sizing: border-box;
+}
+
+.main-phone-splatter {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: visible;
+}
+*/
+/* ================================================================================ */
+/* Menu */
+.menu-abierto,
+.menu-abierto * {
+    box-sizing: border-box;
+}
+
+.menu-abierto {
+    display: none;
+    background: linear-gradient(177.72deg, rgba(255, 255, 255, 1.00) 0%, rgba(202, 129, 129, 1.00) 100%);
+    border-radius: 100px;
+    padding: 12px;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    left: 2%;
+    position: fixed;
+    z-index: 9998;
+    pointer-events: none;
+    transform: scale(0.9);
+}
+
+
+.menu-abierto > * {
+
+    pointer-events: auto;
+}
+
+.homes {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 54px;
+    height: 54px;
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.homes:active{
+    background-color: rgba(216, 214, 214, 0.27);
+}
+
+.home2 {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    overflow: visible;
+}
+
+.inicio {
+    color: #333333;
+    text-align: right;
+    font-family: 'ABeeZee-Regular', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    position: relative;
+    border: none;
+    border-radius: 10px;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 54px;
+    height: 54px;
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.about-us:active{
+    background-color: rgba(216, 214, 214, 0.27);
+}
+
+.submenu {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    overflow: visible;
+}
+
+.sobre-nosotros {
+    color: #333333;
+    text-align: center;
+    font-family: 'ABeeZee-Regular', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    position: relative;
+    border: none;
+    border-radius: 10px;
+}
+
+.informacion {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 54px;
+    height: 54px;
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+
+.informacion:active{
+    background-color: rgba(216, 214, 214, 0.27);
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    overflow: visible;
+    border: none; /* Remove border */
+    border-radius: 10px;
+}
+
+.informacion2 {
+    color: #333333;
+    text-align: right;
+    font-family: 'ABeeZee-Regular', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    position: relative;
+
+}
+
+.violencia {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 54px;
+    height: 54px;
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.violencia:active{
+    background-color: rgba(216, 214, 214, 0.27);
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    overflow: visible;
+    border: none; /* Remove border */
+
+}
+
+.violencia2 {
+    color: #333333;
+    text-align: right;
+    font-family: 'ABeeZee-Regular', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    position: relative;
+}
+
+.close {
+    background: rgba(255, 255, 255, 0.67);
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 54px;
+    height: 54px;
+    position: relative;
+    border: none; /* Remove border */
+}
+
+.close:active{
+    background-color: rgba(216, 214, 214, 0.27);
+}
+
+.cross {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    overflow: visible;
+
+}
+
+.menu-abierto.mostrar {
+    display: flex;
+}
+
+/* ================================================================================ */
+/* texto */
+
+.text-box,
+.text-box * {
+    box-sizing: border-box;
+}
+
+.text-box {
+    box-sizing: border-box;
+    position: relative; /* Cambiado de absolute para permitir fluidez en el diseño */
+    width: 80%; /* Mantenido, pero asegúrate de que este tamaño sea adecuado para tu diseño */
+    height: auto; /* Cambiado de un porcentaje fijo a auto para permitir expansión */
+    margin: auto; /* Centrar en el contenedor padre, si es deseado */
+}
+
+.text-box2 {
+    box-sizing: border-box;
+    position: relative; /* Cambiado de absolute para un flujo natural del documento */
+    width: 100%;
+    height: auto; /* Permite que se ajuste según el contenido */
+    padding: 20px; /* Espacio alrededor del contenido, ajustable según necesidad */
+}
+
+
+.text-box3 {
+    box-sizing: border-box;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(239, 120, 120, 0.1) 100%);
+    border-radius: 40px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.40);
+    border-width: 1px;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    overflow: visible;
+    backdrop-filter: blur(30px);
+}
+
+
+.layoutContainer {
+    display: grid;
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+    gap: 8px;
+    padding: 20px;
+}
+
+
+.violencia-en-m-xicoX {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1.00) 0%, rgba(231, 75, 75, 1.00) 92.39996075630188%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: 'AbhayaLibreExtraBold-Regular', serif;
+    font-size: 38px;
+    font-weight: 400;
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+.presiona-aquX {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1.00) 0%, rgba(231, 75, 75, 1.00) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: 'AbhayaLibreExtraBold-Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    width: auto;
+    height: auto;
+    text-decoration: none;
+}
+
+.quieres-saber-m-sX {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'AbhayaLibreExtraBold-Regular', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    width: auto;
+    height: auto;
+}
+
+.ens {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'AbhayaLibreExtraBold-Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    width: auto;
+    height: auto;
+
+}
+
+.recursos{
+    text-decoration: none;
+    color: rgba(255, 195, 195, 0.92);
+}
