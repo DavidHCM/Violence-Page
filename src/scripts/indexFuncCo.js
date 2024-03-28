@@ -1,6 +1,6 @@
 function knowMore()
 {
-    window.location.href = "";
+    window.location.href = "../views/ComputerViews/Actualidad.html";
 }
 
 function contact()
