@@ -1,16 +1,14 @@
-html {
+html, body {
     margin: 0;
     padding: 0;
-    min-height: 100%;
-    overflow-x: hidden;
+    height: 100%; /* Ensure the body can grow beyond viewport */
+    overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 body {
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
+    min-height: 100vh; /* Use min-height to allow content to expand */
 }
 
 main {
@@ -86,21 +84,30 @@ main {
 
 .layout {
     width: 100vw;
-    height: 100vh;
-
+    min-height: 100vh; /* Changed from height to min-height */
     display: grid;
-    grid:
-    "header" 110px
-    "main" auto
-    "footer" 110px
-    / 1fr;
+    grid-template-rows: 110px auto 110px; /* Adjusted to use auto for main content */
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
     gap: 8px;
 }
 
 
-.header { grid-area: header; }
-.main { grid-area: main; }
-.footer { grid-area: footer; }
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+    overflow: auto; /* Optional: Allows scrolling within main if content overflows */
+}
+
+.footer {
+    grid-area: footer;
+}
+
 
 
 /* ======================================================================= */
@@ -269,7 +276,7 @@ main {
 
 }
 
-#aboutUsColr{
+#actualidadColr{
     color: #B4AEAEFF;
 }
 
@@ -480,21 +487,7 @@ main {
 }
 
 
-.innerText{
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-top: 10px;
-    color: #ffffff;
-    text-align: center;
-    font-family: 'AbhayaLibreExtraBold-bold', serif;
-    font-size: 26px;
-    font-weight: 400;
-    width: 100%;
-    left: 50%;
-    top: 50%;
-    height: 16%;
-    transform: translate(0, 600%);
-}
+
 
 .violencia-en-m-xico {
     width: 100%;
@@ -502,12 +495,12 @@ main {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -230%);
+    transform: translate(-50%, -315%);
 }
 
 
 .violencia-en-m-xico2 {
-    background: linear-gradient(88.59deg, rgba(255, 255, 255, 1.00) 0%, rgb(231, 75, 75) 92.39996075630188%);
+    background: linear-gradient(91.35deg, rgba(255, 255, 255, 1.00) 0%, rgb(231, 75, 75) 92.880380153656%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -524,21 +517,67 @@ main {
     height: auto;
 }
 
-/* ===================================================================== */
+.innerText{
+    color: #cccccc;
+    font-family: 'AbhayaLibre', serif;
+    font-size: 26px;
+    font-weight: 400;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    height: 16%;
+    padding-left: 30px;
+    padding-right: 30px;
+    transform: translate(0, 600%);
+}
 
-.splatter-11,
-.splatter-11 * {
+.textDest
+{
+    font-family: 'AbhayaLibreExtraBold-bold', serif;
+    color: #ffffff;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear,
+    left bottom,
+    left top,
+    color-stop(0.44, rgb(217, 122, 122)),
+    color-stop(0.72, rgb(189, 73, 73)),
+    color-stop(0.86, rgb(231, 75, 75)));
+}
+
+.recursos{
+    text-decoration: none;
+    color: rgba(255, 195, 195, 0.92);
+}
+
+
+.more-windows-splatter,
+.more-windows-splatter * {
     box-sizing: border-box;
 }
 
-.splatter-11 {
+.more-windows-splatter {
     max-width: 100%;
     max-height: 100%;
     position: absolute;
     top: 0;
     left: 0;
 }
-
-
-
-
