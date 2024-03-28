@@ -1,6 +1,15 @@
+import Swal from 'sweetalert2'
+
+const Swal = require('sweetalert2')
+
 function knowMore()
 {
-    window.location.href='mailto:davidhernandezc@iteso.mx';
+
+    Swal.fire({
+        title: "Datos de contacto",
+        text: "davidhernandezc@iteso.mx",
+        icon: "info"
+    });
 }
 
 function contact()
