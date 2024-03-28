@@ -12,8 +12,3 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 });
 
-
-function contact()
-{
-    window.location.href='mailto:davidhernandezc@iteso.mx';
-}
