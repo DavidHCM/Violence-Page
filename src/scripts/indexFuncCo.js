@@ -1,6 +1,6 @@
 function knowMore()
 {
-    window.location.href = "";
+    window.location.href='mailto:davidhernandezc@iteso.mx';
 }
 
 function contact()
