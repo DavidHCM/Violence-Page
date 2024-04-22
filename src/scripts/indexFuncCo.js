@@ -8,3 +8,4 @@ function contact()
 {
     window.location.href='mailto:davidhernandezc@iteso.mx';
 }
+console.log("74 usuarios han ingresado.")

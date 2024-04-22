@@ -12,3 +12,5 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 });
 
+console.log("74 usuarios han ingresado.")
+
